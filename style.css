@@ -1,1 +1,112 @@
-*{box-sizing:border-box}body{margin:0;background:#061715;color:#edf6f1;font:14px Inter,Arial,sans-serif}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.2;background:linear-gradient(#7be7bb10 1px,transparent 1px),linear-gradient(90deg,#7be7bb10 1px,transparent 1px);background-size:55px 55px}header{position:sticky;top:0;z-index:5;background:#061715ee;border-bottom:1px solid #214039}.nav{max-width:1180px;margin:auto;min-height:76px;display:flex;align-items:center;gap:24px;padding:0 20px}.brand{color:#6ee5af;text-decoration:none;display:flex;flex-direction:column;min-width:150px}.brand b{letter-spacing:.08em}.brand small{color:#78938c;letter-spacing:.16em;font-size:8px;margin-top:5px}nav{display:flex;gap:18px;flex:1;justify-content:center;overflow:auto}nav a{color:#91aaa3;text-decoration:none;white-space:nowrap;font-size:13px}nav a:hover,nav a.active{color:#6ee5af}button{background:#0b2420;border:1px solid #31544b;color:#bfeadd;border-radius:10px;cursor:pointer;font-size:20px;width:42px;height:42px}.hero,main section{max-width:1180px;margin:auto}.hero{padding:95px 20px 65px;min-height:520px}.hero>span,.head>div>span,.searchbox>span{font-size:10px;color:#6e9188;letter-spacing:.17em;font-weight:bold}.hero h1{font-size:clamp(60px,9vw,112px);line-height:.84;letter-spacing:-.065em;margin:28px 0}.hero i{font-style:normal;color:#6ee5af}.hero p{font-size:20px;line-height:1.55;color:#91aaa3;max-width:650px}.live{display:inline-flex;gap:10px;align-items:center;border:1px solid #2a4a42;padding:14px 17px;border-radius:12px;color:#6ee5af;margin-top:25px}.live small{color:#78938c}main section{padding:45px 20px}.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}.head h2{font-size:36px;margin:8px 0 0}.head a{color:#7ce4b5;text-decoration:none}.grid{display:grid;gap:16px}.three{grid-template-columns:repeat(3,1fr)}.card{background:linear-gradient(145deg,#0b2420,#081c1a);border:1px solid #1d3b35;border-radius:17px;padding:23px}.card label{color:#79958e;font-size:10px;letter-spacing:.15em}.card strong{display:block;font-size:40px;margin:20px 0 5px}.positive{color:#68e2ad}.negative{color:#ff7e86}.spark{height:55px;margin-top:18px;border-bottom:2px solid #62dda8;background:linear-gradient(150deg,transparent 55%,#62dda815 56%);clip-path:polygon(0 80%,15% 65%,30% 73%,45% 42%,60% 52%,75% 28%,100% 5%,100% 100%,0 100%)}.table{padding:8px 20px}.tr{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:15px;padding:17px 5px;border-bottom:1px solid #19362f}.tr:last-child{border:0}.th{font-size:9px;color:#68837b;letter-spacing:.15em}.analysis{min-height:205px;cursor:pointer;text-decoration:none;color:inherit}.analysis:hover{border-color:#3e7765;transform:translateY(-2px)}.analysis h3{font-size:21px;margin:14px 0 9px}.analysis p{color:#8fa9a1;line-height:1.5}.tag{color:#6ee5af;font-size:9px;letter-spacing:.12em}.meta{color:#647f77;font-size:11px}.modal{display:none;position:fixed;inset:0;z-index:50;background:#000b;backdrop-filter:blur(7px);padding:8vh 20px}.modal.show{display:block}.searchbox{position:relative;max-width:760px;margin:auto;background:#09201d;border:1px solid #31564b;border-radius:18px;padding:27px}.searchbox>button{position:absolute;right:14px;top:10px;border:0;background:none;font-size:30px}.searchbox input{width:100%;padding:16px;margin:20px 0 10px;border-radius:10px;border:1px solid #31564b;background:#061715;color:white;font-size:15px}.result{display:block;padding:14px;border-radius:9px;color:#eaf6f1;text-decoration:none}.result:hover{background:#0d2a25}.result small{display:block;color:#6ee5af;margin-bottom:4px}footer{max-width:1180px;margin:50px auto 0;padding:28px 20px;border-top:1px solid #19352f;color:#6ee5af;display:flex;justify-content:space-between}footer small{color:#647f77}@media(max-width:800px){.nav{gap:12px}nav{justify-content:flex-start}.hero{padding-top:65px}.hero h1{font-size:62px}.three{grid-template-columns:1fr}.head h2{font-size:30px}footer{flex-direction:column;gap:10px}}
+
+/* Infonomix V4 — interaction + responsive polish */
+:root{
+  --ix-bg:#061513;
+  --ix-panel:rgba(10,34,30,.78);
+  --ix-border:rgba(170,255,220,.14);
+  --ix-text:#edf8f4;
+  --ix-muted:#8da7a0;
+  --ix-green:#61e6a4;
+  --ix-red:#ff7272;
+}
+
+html{scroll-behavior:smooth}
+body{
+  background:var(--ix-bg);
+  color:var(--ix-text);
+  overflow-x:hidden;
+}
+button,a,input{font:inherit}
+button{cursor:pointer}
+
+.analysis-card,
+.business-card,
+.insight-card,
+.market-card,
+.card{
+  transition:transform .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease;
+}
+
+.analysis-card:hover,
+.business-card:hover,
+.insight-card:hover,
+.market-card:hover,
+.card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(97,230,164,.42);
+  box-shadow:0 14px 40px rgba(0,0,0,.22);
+}
+
+.analysis-card:focus-visible,
+.business-card:focus-visible,
+.insight-card:focus-visible,
+.market-card:focus-visible,
+.card:focus-visible{
+  outline:2px solid var(--ix-green);
+  outline-offset:3px;
+}
+
+.read-link{
+  color:var(--ix-green)!important;
+  text-decoration:none;
+  transition:opacity .2s ease;
+}
+.read-link:hover{opacity:.75}
+
+.tag-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+.tag-row span{
+  border:1px solid var(--ix-border);
+  border-radius:999px;
+  padding:4px 8px;
+  font-size:.72rem;
+  color:var(--ix-muted);
+}
+
+.search-results-panel{
+  position:fixed;
+  inset:80px 14px auto;
+  max-width:760px;
+  margin:auto;
+  z-index:9999;
+}
+
+input[type="search"],
+input[name="search"],
+input[placeholder*="Search" i]{
+  color:var(--ix-text);
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--ix-border);
+  border-radius:10px;
+  outline:none;
+}
+input[type="search"]:focus,
+input[name="search"]:focus,
+input[placeholder*="Search" i]:focus{
+  border-color:rgba(97,230,164,.55);
+  box-shadow:0 0 0 3px rgba(97,230,164,.08);
+}
+
+@media (max-width:950px){
+  .container{width:min(100% - 32px,1100px)}
+  .business-grid,.insights-grid,.analysis-grid{
+    grid-template-columns:1fr 1fr!important;
+  }
+}
+@media (max-width:650px){
+  .container{width:min(100% - 24px,1100px)}
+  .business-grid,.insights-grid,.analysis-grid{
+    grid-template-columns:1fr!important;
+  }
+  .topbar nav{
+    overflow-x:auto;
+    white-space:nowrap;
+    scrollbar-width:none;
+  }
+  .topbar nav::-webkit-scrollbar{display:none}
+  h1{font-size:clamp(2.6rem,13vw,5rem)}
+  .dashboard-head{padding-top:28px}
+}
