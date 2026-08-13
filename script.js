@@ -1,14 +1,243 @@
-const insights=[
-{id:'global-sentiment',tag:'MARKETS / EXPLAINER',title:'Why global market sentiments matter for Indian sectors',text:'Global risk appetite, commodities, rates and overseas flows can affect Indian sectors in different ways.'},
-{id:'business-growth',tag:'BUSINESS / ANALYSIS',title:'Understanding the signal behind business growth',text:'Revenue growth is more meaningful when demand, margins, capacity and cash generation move together.'},
-{id:'consumer-demand',tag:'CONSUMER / TRENDS',title:'What changing consumer demand means for Indian business',text:'Changing demand can influence pricing, products, distribution and long-term company strategy.'},
-{id:'industrial-shift',tag:'BUSINESS / INDUSTRY',title:'Industrial shifts reshaping competitive strategy',text:'Technology, supply-chain redesign and production economics can change sector leadership.'},
-{id:'company-strategy',tag:'BUSINESS / STRATEGY',title:'How company strategy becomes a market signal',text:'Expansion plans, capital allocation and product decisions reveal management priorities early.'},
-{id:'risk-signal',tag:'INSIGHT / ANALYSIS',title:'Reading the signals behind market risk',text:'Use rates, volatility, currency moves and sector breadth to separate noise from meaningful change.'}];
-const sections=[['Business','Business intelligence, industry shifts, company strategy and consumer trends.','pages/business.html'],['Insights','Analysis and explainers for understanding market and business signals.','pages/insights.html'],['Indian Markets','NIFTY 50, SENSEX and Indian market signals.','pages/indian-markets.html'],['Global Markets','Major global indices and cross-market signals.','pages/global-markets.html'],['Currencies','Key currency pairs and exchange-rate signals.','pages/currencies.html']];
-const fmt=v=>typeof v==='number'?v.toLocaleString('en-IN',{maximumFractionDigits:2}):'—';
-const pct=v=>typeof v==='number'?(v>=0?'+':'')+v.toFixed(2)+'%':'—';
-function paint(id,v){let e=document.getElementById(id);if(!e)return;e.textContent=pct(v);e.className=v>=0?'positive':'negative'}
-async function load(){let d=null;try{d=await (await fetch('market-data.json?x='+Date.now())).json()}catch(e){}let i=d?.instruments||{};let n=i.nifty50||{},s=i.sensex||{},u=i.usdinr||{};for(const [id,v] of [['nifty',n.price],['sensex',s.price],['usd',u.price]]){let e=document.getElementById(id);if(e)e.textContent=fmt(v)}paint('niftyC',n.changePct);paint('sensexC',s.changePct);paint('usdC',u.changePct);let up=document.getElementById('updated');if(up&&d?.updatedAt)up.textContent=new Date(d.updatedAt).toLocaleString('en-IN',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});let g=document.getElementById('global');if(g)g.innerHTML=(d?.global||[]).map(x=>`<div class="tr"><span>${x.name}</span><span>${fmt(x.value)}</span><span class="${x.changePct>=0?'positive':'negative'}">${pct(x.changePct)}</span></div>`).join('')||'<div class="tr"><span>No feed</span><span>—</span><span>—</span></div>';let p=document.getElementById('preview');if(p)p.innerHTML=insights.slice(0,3).map(x=>`<a class="card analysis" href="pages/insights.html#${x.id}"><span class="tag">${x.tag}</span><h3>${x.title}</h3><p>${x.text}</p><span class="meta">Business • Markets • Intelligence</span></a>`).join('')}
-function searchSetup(){let m=document.getElementById('modal'),i=document.getElementById('search'),r=document.getElementById('results');if(!m)return;document.getElementById('searchOpen').onclick=()=>{m.classList.add('show');i.focus()};document.getElementById('searchClose').onclick=()=>m.classList.remove('show');m.onclick=e=>{if(e.target===m)m.classList.remove('show')};i.oninput=()=>{let q=i.value.toLowerCase().trim();if(!q){r.innerHTML='<p class="meta">Try company strategy, consumer trends, global markets, NIFTY…</p>';return}let a=[...insights.map(x=>({tag:x.tag,title:x.title,text:x.text,url:'pages/insights.html#'+x.id})),...sections.map(x=>({tag:'SECTION',title:x[0],text:x[1],url:x[2]}))].filter(x=>(x.title+x.text+x.tag).toLowerCase().includes(q));r.innerHTML=a.length?a.map(x=>`<a class="result" href="${x.url}"><small>${x.tag}</small><b>${x.title}</b><div class="meta">${x.text}</div></a>`).join(''):'<p class="meta">No matching result. Try another keyword.</p>'}}
-document.addEventListener('DOMContentLoaded',()=>{load();searchSetup()});
+/* Infonomix Market Intelligence — interactive site engine */
+(() => {
+  "use strict";
+
+  const insights = [
+    {
+      id: "global-sentiment",
+      tag: "MARKETS / EXPLAINER",
+      title: "Why global market sentiments matter for Indian sectors",
+      text: "Global risk appetite, commodities, rates and overseas flows can affect Indian equities, currencies and business confidence.",
+      category: "Markets",
+      tags: ["global markets", "sentiment", "india", "sectors"]
+    },
+    {
+      id: "business-growth",
+      tag: "BUSINESS / ANALYSIS",
+      title: "Understanding the signal behind business growth",
+      text: "Revenue growth, margins, demand and capacity expansion can reveal whether a company's growth is broad-based or temporary.",
+      category: "Business",
+      tags: ["business growth", "companies", "strategy", "demand"]
+    },
+    {
+      id: "consumer-demand",
+      tag: "CONSUMER / TRENDS",
+      title: "What changing consumer demand means for Indian business",
+      text: "Changing preferences, pricing power, product mix and digital adoption can reshape how companies compete.",
+      category: "Consumer",
+      tags: ["consumer trends", "demand", "digital", "pricing"]
+    },
+    {
+      id: "industrial-shift",
+      tag: "BUSINESS / INDUSTRY",
+      title: "Industrial shifts reshaping competitive strategy",
+      text: "Technology, supply-chain redesign, manufacturing capacity and policy changes are influencing Indian industries.",
+      category: "Industry",
+      tags: ["industrial shift", "manufacturing", "supply chain", "technology"]
+    },
+    {
+      id: "company-strategy",
+      tag: "BUSINESS / STRATEGY",
+      title: "How company strategy becomes a market signal",
+      text: "Expansion plans, capital allocation, partnerships and product launches can provide clues about future business direction.",
+      category: "Strategy",
+      tags: ["company strategy", "strategy", "investment", "growth"]
+    },
+    {
+      id: "risk-signal",
+      tag: "RISK / SIGNAL",
+      title: "Reading the signals behind market risk",
+      text: "Rates, volatility, currency moves and sector breadth help separate normal market noise from meaningful risk signals.",
+      category: "Risk",
+      tags: ["risk", "volatility", "currency", "markets"]
+    }
+  ];
+
+  const searchTerms = (value) =>
+    String(value || "")
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, " ")
+      .split(/\s+/)
+      .filter(Boolean);
+
+  const escapeHTML = (value) =>
+    String(value ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+
+  function scoreItem(item, query) {
+    const q = searchTerms(query);
+    if (!q.length) return 1;
+
+    const haystack = [
+      item.id, item.tag, item.title, item.text, item.category,
+      ...(item.tags || [])
+    ].join(" ").toLowerCase();
+
+    return q.reduce((score, term) => {
+      if (haystack.includes(term)) score += item.title.toLowerCase().includes(term) ? 3 : 1;
+      return score;
+    }, 0);
+  }
+
+  function showMessage(message) {
+    let box = document.getElementById("search-results");
+    if (!box) {
+      box = document.createElement("div");
+      box.id = "search-results";
+      box.setAttribute("role", "status");
+      box.style.cssText =
+        "position:fixed;z-index:9999;top:88px;left:50%;transform:translateX(-50%);" +
+        "width:min(760px,calc(100% - 28px));max-height:70vh;overflow:auto;" +
+        "padding:18px;border:1px solid rgba(255,255,255,.15);border-radius:16px;" +
+        "background:rgba(5,20,18,.97);color:#fff;box-shadow:0 20px 60px rgba(0,0,0,.45)";
+      document.body.appendChild(box);
+    }
+    box.innerHTML = message;
+    box.style.display = "block";
+  }
+
+  function renderSearch(query) {
+    const results = insights
+      .map(item => ({ item, score: scoreItem(item, query) }))
+      .filter(x => x.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .map(x => x.item);
+
+    if (!results.length) {
+      showMessage(`<strong>No matching insight found.</strong><br><span style="opacity:.7">Try business, consumer, strategy, industrial, markets or risk.</span>`);
+      return;
+    }
+
+    showMessage(
+      `<div style="display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px">
+        <strong>Search results</strong>
+        <button id="close-search" type="button" style="border:0;background:none;color:#fff;font-size:20px;cursor:pointer">×</button>
+      </div>` +
+      results.map(item => `
+        <article style="padding:14px 0;border-top:1px solid rgba(255,255,255,.1)">
+          <small style="opacity:.6">${escapeHTML(item.tag)}</small>
+          <h3 style="margin:5px 0">${escapeHTML(item.title)}</h3>
+          <p style="margin:0 0 8px;opacity:.75">${escapeHTML(item.text)}</p>
+          <button type="button" class="search-open-insight" data-insight-id="${escapeHTML(item.id)}"
+            style="border:1px solid rgba(255,255,255,.2);background:transparent;color:#71e8ae;padding:7px 11px;border-radius:8px;cursor:pointer">
+            Read analysis →
+          </button>
+        </article>`).join("")
+    );
+
+    document.getElementById("close-search")?.addEventListener("click", () => {
+      document.getElementById("search-results")?.remove();
+    });
+
+    document.querySelectorAll(".search-open-insight").forEach(btn => {
+      btn.addEventListener("click", () => openInsight(btn.dataset.insightId));
+    });
+  }
+
+  function openInsight(id) {
+    const item = insights.find(x => x.id === id);
+    if (!item) return;
+
+    const slug = encodeURIComponent(id);
+    history.pushState({ insight: id }, "", `#insight-${slug}`);
+
+    showMessage(`
+      <div style="display:flex;justify-content:space-between;gap:12px;align-items:center">
+        <small style="opacity:.6">${escapeHTML(item.tag)}</small>
+        <button id="close-search" type="button" style="border:0;background:none;color:#fff;font-size:20px;cursor:pointer">×</button>
+      </div>
+      <h2 style="margin:8px 0">${escapeHTML(item.title)}</h2>
+      <p style="line-height:1.7;opacity:.8">${escapeHTML(item.text)}</p>
+      <p style="opacity:.6">Topics: ${(item.tags || []).map(escapeHTML).join(" · ")}</p>
+    `);
+
+    document.getElementById("close-search")?.addEventListener("click", () => {
+      document.getElementById("search-results")?.remove();
+    });
+  }
+
+  function setupSearch() {
+    const buttons = [...document.querySelectorAll(
+      ".search, .search-btn, [aria-label='Search'], button[data-search-open], .search-button"
+    )];
+
+    const inputs = [...document.querySelectorAll(
+      "input[type='search'], input[name='search'], input[placeholder*='Search' i]"
+    )];
+
+    inputs.forEach(input => {
+      input.addEventListener("input", () => {
+        if (input.value.trim().length >= 2) renderSearch(input.value);
+      });
+      input.addEventListener("keydown", event => {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          renderSearch(input.value);
+        }
+      });
+    });
+
+    buttons.forEach(button => {
+      button.addEventListener("click", event => {
+        event.preventDefault();
+        const input = document.querySelector("input[type='search'], input[name='search'], input[placeholder*='Search' i]");
+        if (input) {
+          input.focus();
+          return;
+        }
+        const query = window.prompt("Search Infonomix", "");
+        if (query?.trim()) renderSearch(query);
+      });
+    });
+  }
+
+  function setupCards() {
+    document.querySelectorAll("[data-business-id], [data-insight-id]").forEach(card => {
+      card.addEventListener("click", event => {
+        if (event.target.closest("a, button")) return;
+        const id = card.dataset.insightId || card.dataset.businessId;
+        if (id) openInsight(id);
+      });
+
+      card.addEventListener("keydown", event => {
+        if ((event.key === "Enter" || event.key === " ") &&
+            !event.target.closest("a, button")) {
+          event.preventDefault();
+          const id = card.dataset.insightId || card.dataset.businessId;
+          if (id) openInsight(id);
+        }
+      });
+    });
+  }
+
+  function setupInsightPage() {
+    const grids = document.querySelectorAll(
+      "[data-insights-grid], .insights-grid, .analysis-grid, #insights-grid"
+    );
+
+    grids.forEach(grid => {
+      if (grid.children.length) return;
+
+      grid.innerHTML = insights.map(item => `
+        <article class="analysis-card" data-insight-id="${escapeHTML(item.id)}" tabindex="0">
+          <div class="card-top"><span>${escapeHTML(item.tag)}</span></div>
+          <h2>${escapeHTML(item.title)}</h2>
+          <p>${escapeHTML(item.text)}</p>
+          <div class="meta-line"><span>${escapeHTML(item.category)}</span></div>
+          <div class="tag-row">${(item.tags || []).map(t => `<span>${escapeHTML(t)}</span>`).join(" ")}</div>
+          <a class="read-link" href="#insight-${encodeURIComponent(item.id)}">Read analysis →</a>
+        </article>
+      `).join("");
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    setupInsightPage();
+    setupSearch();
+    setupCards();
+  });
+})();
