@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T20:05:08.984213+00:00",
+  "updatedAt": "2026-08-14T21:03:54.082437+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -30,7 +30,7 @@
       "currency": "USD",
       "exchange": "SNP",
       "marketState": null,
-      "asOf": 1786737907
+      "asOf": 1786739967
     },
     "nasdaq": {
       "symbol": "^IXIC",
@@ -40,7 +40,7 @@
       "currency": "USD",
       "exchange": "NIM",
       "marketState": null,
-      "asOf": 1786737907
+      "asOf": 1786741432
     },
     "dow": {
       "symbol": "^DJI",
@@ -50,7 +50,7 @@
       "currency": "USD",
       "exchange": "DJI",
       "marketState": null,
-      "asOf": 1786737908
+      "asOf": 1786740065
     },
     "ftse": {
       "symbol": "^FTSE",
@@ -74,33 +74,33 @@
     },
     "usdinr": {
       "symbol": "USDINR=X",
-      "price": 95.44,
+      "price": 95.415,
       "previousClose": 95.43,
-      "changePct": 0.010478885046621507,
+      "changePct": -0.015718327569947153,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1786736036
+      "asOf": 1786738371
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "price": 110.4153,
+      "price": 110.4037,
       "previousClose": 110.0393,
-      "changePct": 0.3416961031195262,
+      "changePct": 0.331154414831795,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1786737625
+      "asOf": 1786740020
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
-      "price": 129.1339,
+      "price": 129.1166,
       "previousClose": 128.6825,
-      "changePct": 0.35078584889165715,
+      "changePct": 0.3373419074077678,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1786737625
+      "asOf": 1786740020
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
@@ -110,7 +110,7 @@
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1786737625
+      "asOf": 1786740020
     }
   }
 }
