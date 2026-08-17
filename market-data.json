@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T10:06:52.239474+00:00",
+  "updatedAt": "2026-08-17T11:12:30.214291+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -14,13 +14,13 @@
     },
     "sensex": {
       "symbol": "^BSESN",
-      "price": 77825.08,
+      "price": 77728.16,
       "previousClose": 78009.25,
-      "changePct": -0.23608738707268465,
+      "changePct": -0.3603290635405372,
       "currency": "INR",
       "exchange": "BSE",
       "marketState": null,
-      "asOf": 1786960311
+      "asOf": 1786960942
     },
     "sp500": {
       "symbol": "^GSPC",
@@ -54,13 +54,13 @@
     },
     "ftse": {
       "symbol": "^FTSE",
-      "price": 10749.6,
+      "price": 10765.92,
       "previousClose": 10750.11,
-      "changePct": -0.004744137501850848,
+      "changePct": 0.14706826255730862,
       "currency": "GBP",
       "exchange": "FGI",
       "marketState": null,
-      "asOf": 1786960310
+      "asOf": 1786964248
     },
     "nikkei": {
       "symbol": "^N225",
@@ -84,33 +84,33 @@
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "price": 110.8706,
+      "price": 110.8864,
       "previousClose": 110.4037,
-      "changePct": 0.42290249330411517,
+      "changePct": 0.43721360787726693,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1786961094
+      "asOf": 1786962595
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
-      "price": 129.5911,
+      "price": 129.6408,
       "previousClose": 129.1185,
-      "changePct": 0.3660203611411222,
+      "changePct": 0.40451213420230353,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1786961094
+      "asOf": 1786962595
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
-      "price": 0.6004,
+      "price": 0.6007,
       "previousClose": 0.5987,
-      "changePct": 0.28394855520294554,
+      "changePct": 0.33405712376816465,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1786961094
+      "asOf": 1786962595
     }
   }
 }
