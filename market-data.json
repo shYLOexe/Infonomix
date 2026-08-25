@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T23:02:27.114203+00:00",
+  "updatedAt": "2026-08-25T23:59:08.113136+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -75,8 +75,8 @@
     "usdinr": {
       "symbol": "USDINR=X",
       "price": 95.402,
-      "previousClose": 95.735,
-      "changePct": -0.3478351700005206,
+      "previousClose": 95.402,
+      "changePct": 0.0,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
@@ -85,8 +85,8 @@
     "eurinr": {
       "symbol": "EURINR=X",
       "price": 111.3845,
-      "previousClose": 111.6913,
-      "changePct": -0.2746856738170256,
+      "previousClose": 111.3845,
+      "changePct": 0.0,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
@@ -95,8 +95,8 @@
     "gbpinr": {
       "symbol": "GBPINR=X",
       "price": 130.1692,
-      "previousClose": 130.4776,
-      "changePct": -0.23636241009951592,
+      "previousClose": 130.1692,
+      "changePct": 0.0,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
@@ -105,8 +105,8 @@
     "jpyinr": {
       "symbol": "JPYINR=X",
       "price": 0.5991,
-      "previousClose": 0.6016,
-      "changePct": -0.4155585106383075,
+      "previousClose": 0.5991,
+      "changePct": 0.0,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
