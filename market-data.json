@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T21:01:15.550382+00:00",
+  "updatedAt": "2026-08-25T21:59:41.918559+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -30,7 +30,7 @@
       "currency": "USD",
       "exchange": "SNP",
       "marketState": null,
-      "asOf": 1787689201
+      "asOf": 1787694229
     },
     "nasdaq": {
       "symbol": "^IXIC",
@@ -40,7 +40,7 @@
       "currency": "USD",
       "exchange": "NIM",
       "marketState": null,
-      "asOf": 1787691673
+      "asOf": 1787692559
     },
     "dow": {
       "symbol": "^DJI",
@@ -50,7 +50,7 @@
       "currency": "USD",
       "exchange": "DJI",
       "marketState": null,
-      "asOf": 1787689200
+      "asOf": 1787694229
     },
     "ftse": {
       "symbol": "^FTSE",
