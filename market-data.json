@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T10:09:01.383032+00:00",
+  "updatedAt": "2026-08-26T11:51:10.174516+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -14,13 +14,13 @@
     },
     "sensex": {
       "symbol": "^BSESN",
-      "price": 77504.68,
+      "price": 77472.94,
       "previousClose": 77656.09,
-      "changePct": -0.19497504960654533,
+      "changePct": -0.23584756842637092,
       "currency": "INR",
       "exchange": "BSE",
       "marketState": null,
-      "asOf": 1787738040
+      "asOf": 1787738540
     },
     "sp500": {
       "symbol": "^GSPC",
@@ -54,13 +54,13 @@
     },
     "ftse": {
       "symbol": "^FTSE",
-      "price": 10876.6,
+      "price": 10875.62,
       "previousClose": 10886.16,
-      "changePct": -0.08781792661507355,
+      "changePct": -0.0968201826906738,
       "currency": "GBP",
       "exchange": "FGI",
       "marketState": null,
-      "asOf": 1787738040
+      "asOf": 1787744170
     },
     "nikkei": {
       "symbol": "^N225",
