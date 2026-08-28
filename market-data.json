@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T21:53:07.810270+00:00",
+  "updatedAt": "2026-08-28T22:07:32.793563+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -90,7 +90,7 @@
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1787953865
+      "asOf": 1787954766
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
