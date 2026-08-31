@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T21:37:40.552227+00:00",
+  "updatedAt": "2026-08-31T21:52:31.816319+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -80,7 +80,7 @@
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788205357
+      "asOf": 1788212939
     },
     "eurinr": {
       "symbol": "EURINR=X",
