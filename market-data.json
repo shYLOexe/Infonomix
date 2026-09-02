@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T11:41:39.092816+00:00",
+  "updatedAt": "2026-09-02T11:54:23.234208+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -54,13 +54,13 @@
     },
     "ftse": {
       "symbol": "^FTSE",
-      "price": 10742.68,
+      "price": 10756.04,
       "previousClose": 10789.28,
-      "changePct": -0.4319101923390658,
+      "changePct": -0.3080835792564451,
       "currency": "GBP",
       "exchange": "FGI",
       "marketState": null,
-      "asOf": 1788348397
+      "asOf": 1788349162
     },
     "nikkei": {
       "symbol": "^N225",
