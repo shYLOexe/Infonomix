@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T19:54:36.414686+00:00",
+  "updatedAt": "2026-09-02T20:15:18.007321+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -24,33 +24,33 @@
     },
     "sp500": {
       "symbol": "^GSPC",
-      "price": 7667.08,
+      "price": 7666.6,
       "previousClose": 7631.47,
-      "changePct": 0.4666204545126912,
+      "changePct": 0.46033070954875155,
       "currency": "USD",
       "exchange": "SNP",
       "marketState": null,
-      "asOf": 1788378875
+      "asOf": 1788380117
     },
     "nasdaq": {
       "symbol": "^IXIC",
-      "price": 26218.19,
+      "price": 26217.828,
       "previousClose": 26099.773,
-      "changePct": 0.45370892689372294,
+      "changePct": 0.4523219416506047,
       "currency": "USD",
       "exchange": "NIM",
       "marketState": null,
-      "asOf": 1788378872
+      "asOf": 1788380114
     },
     "dow": {
       "symbol": "^DJI",
-      "price": 53056.96,
+      "price": 53061.95,
       "previousClose": 52766.88,
-      "changePct": 0.5497387755349601,
+      "changePct": 0.5591954650341269,
       "currency": "USD",
       "exchange": "DJI",
       "marketState": null,
-      "asOf": 1788378875
+      "asOf": 1788380116
     },
     "ftse": {
       "symbol": "^FTSE",
