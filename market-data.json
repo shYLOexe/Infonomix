@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T19:14:50.779586+00:00",
+  "updatedAt": "2026-09-02T19:28:39.204301+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -24,33 +24,33 @@
     },
     "sp500": {
       "symbol": "^GSPC",
-      "price": 7670.24,
+      "price": 7670.18,
       "previousClose": 7631.47,
-      "changePct": 0.5080279421919961,
+      "changePct": 0.5072417240715097,
       "currency": "USD",
       "exchange": "SNP",
       "marketState": null,
-      "asOf": 1788376489
+      "asOf": 1788377319
     },
     "nasdaq": {
       "symbol": "^IXIC",
-      "price": 26215.99,
+      "price": 26210.613,
       "previousClose": 26099.773,
-      "changePct": 0.44527973480842364,
+      "changePct": 0.42467802306173374,
       "currency": "USD",
       "exchange": "NIM",
       "marketState": null,
-      "asOf": 1788376488
+      "asOf": 1788377318
     },
     "dow": {
       "symbol": "^DJI",
-      "price": 53054.66,
+      "price": 53083.43,
       "previousClose": 52766.88,
-      "changePct": 0.5453799807758316,
+      "changePct": 0.5999028178281584,
       "currency": "USD",
       "exchange": "DJI",
       "marketState": null,
-      "asOf": 1788376490
+      "asOf": 1788377318
     },
     "ftse": {
       "symbol": "^FTSE",
@@ -84,23 +84,23 @@
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "price": 110.0298,
+      "price": 110.0507,
       "previousClose": 110.0817,
-      "changePct": -0.04714680096692129,
+      "changePct": -0.028160902311639178,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788376369
+      "asOf": 1788376970
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
-      "price": 128.0349,
+      "price": 128.0605,
       "previousClose": 128.3123,
-      "changePct": -0.21619127706385133,
+      "changePct": -0.1962399551718759,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788376369
+      "asOf": 1788376970
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
