@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T00:24:43.396952+00:00",
+  "updatedAt": "2026-09-03T00:47:03.301081+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -64,13 +64,13 @@
     },
     "nikkei": {
       "symbol": "^N225",
-      "price": 64353.17,
+      "price": 64203.15,
       "previousClose": 64325.64,
-      "changePct": 0.04279786411763464,
+      "changePct": -0.1904217354075264,
       "currency": "JPY",
       "exchange": "OSA",
       "marketState": null,
-      "asOf": 1788394180
+      "asOf": 1788395520
     },
     "usdinr": {
       "symbol": "USDINR=X",
