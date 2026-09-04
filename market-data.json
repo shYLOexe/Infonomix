@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T21:29:39.247921+00:00",
+  "updatedAt": "2026-09-04T21:43:39.655219+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -50,7 +50,7 @@
       "currency": "USD",
       "exchange": "DJI",
       "marketState": null,
-      "asOf": 1788554010
+      "asOf": 1788554009
     },
     "ftse": {
       "symbol": "^FTSE",
