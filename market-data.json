@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T12:24:01.552191+00:00",
+  "updatedAt": "2026-09-07T12:47:40.140306+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -54,13 +54,13 @@
     },
     "ftse": {
       "symbol": "^FTSE",
-      "price": 10851.47,
+      "price": 10858.53,
       "previousClose": 10831.09,
-      "changePct": 0.18816204093954716,
+      "changePct": 0.25334476954766794,
       "currency": "GBP",
       "exchange": "FGI",
       "marketState": null,
-      "asOf": 1788782940
+      "asOf": 1788784359
     },
     "nikkei": {
       "symbol": "^N225",
@@ -74,43 +74,43 @@
     },
     "usdinr": {
       "symbol": "USDINR=X",
-      "price": 94.485,
+      "price": 94.475,
       "previousClose": 94.48,
-      "changePct": 0.005292125317522706,
+      "changePct": -0.005292125317537747,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788775457
+      "asOf": 1788784921
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "price": 109.8396,
+      "price": 109.8715,
       "previousClose": 109.721,
-      "changePct": 0.10809234330711595,
+      "changePct": 0.1371660848880286,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788777154
+      "asOf": 1788785251
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
-      "price": 127.8592,
+      "price": 127.8789,
       "previousClose": 127.6542,
-      "changePct": 0.1605900941762968,
+      "changePct": 0.17602241054348275,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788777154
+      "asOf": 1788785251
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
-      "price": 0.6107,
+      "price": 0.6119,
       "previousClose": 0.6046,
-      "changePct": 1.0089315249751893,
+      "changePct": 1.2074098577571903,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788777154
+      "asOf": 1788785251
     }
   }
 }
