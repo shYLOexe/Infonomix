@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T20:32:40.691470+00:00",
+  "updatedAt": "2026-09-08T20:54:36.229120+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -40,7 +40,7 @@
       "currency": "USD",
       "exchange": "NIM",
       "marketState": null,
-      "asOf": 1788899558
+      "asOf": 1788900875
     },
     "dow": {
       "symbol": "^DJI",
