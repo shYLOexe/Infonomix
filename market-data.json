@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-09-08T22:54:00.658322+00:00",
+  "updatedAt": "2026-09-08T23:13:43.653584+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
       "symbol": "^NSEI",
-      "price": 23635.1,
+      "price": 23779.2,
       "previousClose": 23897.7,
-      "changePct": -1.0988505169953686,
+      "changePct": -0.4958636186746005,
       "currency": "INR",
       "exchange": "NSI",
       "marketState": null,
-      "asOf": 1788861677
+      "asOf": 1788775200
     },
     "sensex": {
       "symbol": "^BSESN",
-      "price": 75577.58,
+      "price": 76132.8,
       "previousClose": 76515.4,
-      "changePct": -1.2256617622073367,
+      "changePct": -0.5000300593083109,
       "currency": "INR",
       "exchange": "BSE",
       "marketState": null,
-      "asOf": 1788861749
+      "asOf": 1788775200
     },
     "sp500": {
       "symbol": "^GSPC",
