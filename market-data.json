@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T11:17:53.635850+00:00",
+  "updatedAt": "2026-09-09T11:42:40.416583+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -54,13 +54,13 @@
     },
     "ftse": {
       "symbol": "^FTSE",
-      "price": 10714.78,
+      "price": 10703.09,
       "previousClose": 10811.66,
-      "changePct": -0.8960696137318339,
+      "changePct": -1.0041936205911,
       "currency": "GBP",
       "exchange": "FGI",
       "marketState": null,
-      "asOf": 1788951773
+      "asOf": 1788953260
     },
     "nikkei": {
       "symbol": "^N225",
@@ -84,23 +84,23 @@
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "price": 110.6356,
+      "price": 110.7365,
       "previousClose": 110.2592,
-      "changePct": 0.3413774088692731,
+      "changePct": 0.43288904690039437,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788952672
+      "asOf": 1788954056
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
-      "price": 128.7741,
+      "price": 128.9434,
       "previousClose": 128.3884,
-      "changePct": 0.3004165485355485,
+      "changePct": 0.43228204417222027,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788952672
+      "asOf": 1788954055
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
