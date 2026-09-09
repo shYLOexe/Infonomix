@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-09-09T03:57:02.961343+00:00",
+  "updatedAt": "2026-09-09T04:18:52.174021+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
       "symbol": "^NSEI",
-      "price": 23510.6,
+      "price": 23506.55,
       "previousClose": 23635.1,
-      "changePct": -0.526758930573596,
+      "changePct": -0.5438944620500835,
       "currency": "INR",
       "exchange": "NSI",
       "marketState": null,
-      "asOf": 1788926222
+      "asOf": 1788927531
     },
     "sensex": {
       "symbol": "^BSESN",
-      "price": 75216.22,
+      "price": 75074.77,
       "previousClose": 75577.58,
-      "changePct": -0.47813121298670924,
+      "changePct": -0.6652898915260288,
       "currency": "INR",
       "exchange": "BSE",
       "marketState": null,
-      "asOf": 1788925321
+      "asOf": 1788926630
     },
     "sp500": {
       "symbol": "^GSPC",
@@ -30,7 +30,7 @@
       "currency": "USD",
       "exchange": "SNP",
       "marketState": null,
-      "asOf": 1788897600
+      "asOf": 1788901256
     },
     "nasdaq": {
       "symbol": "^IXIC",
@@ -64,53 +64,53 @@
     },
     "nikkei": {
       "symbol": "^N225",
-      "price": 65430.87,
+      "price": 65250.01,
       "previousClose": 65269.33,
-      "changePct": 0.24749756125886516,
+      "changePct": -0.029600426417736643,
       "currency": "JPY",
       "exchange": "OSA",
       "marketState": null,
-      "asOf": 1788925320
+      "asOf": 1788926630
     },
     "usdinr": {
       "symbol": "USDINR=X",
-      "price": 94.9375,
+      "price": 94.9775,
       "previousClose": 94.81,
-      "changePct": 0.1344794852863598,
+      "changePct": 0.1766691277291467,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788926203
+      "asOf": 1788927518
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "price": 110.4151,
+      "price": 110.4636,
       "previousClose": 110.2592,
-      "changePct": 0.1413940968191211,
+      "changePct": 0.18538135593219665,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788926218
+      "asOf": 1788927520
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
-      "price": 128.5952,
+      "price": 128.6556,
       "previousClose": 128.3884,
-      "changePct": 0.16107374186454185,
+      "changePct": 0.20811849045552605,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788926221
+      "asOf": 1788927520
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
-      "price": 0.6184,
+      "price": 0.6191,
       "previousClose": 0.6161,
-      "changePct": 0.37331602012659776,
+      "changePct": 0.48693393929556933,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1788925953
+      "asOf": 1788927453
     }
   }
 }
