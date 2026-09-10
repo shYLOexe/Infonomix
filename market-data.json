@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T11:55:52.078453+00:00",
+  "updatedAt": "2026-09-10T12:22:47.396131+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -30,7 +30,7 @@
       "currency": "USD",
       "exchange": "SNP",
       "marketState": null,
-      "asOf": 1788984000
+      "asOf": 1788986599
     },
     "nasdaq": {
       "symbol": "^IXIC",
@@ -54,13 +54,13 @@
     },
     "ftse": {
       "symbol": "^FTSE",
-      "price": 10646.65,
+      "price": 10621.3,
       "previousClose": 10811.7,
-      "changePct": -1.526586938224341,
+      "changePct": -1.7610551532136616,
       "currency": "GBP",
       "exchange": "FGI",
       "marketState": null,
-      "asOf": 1789040451
+      "asOf": 1789042066
     },
     "nikkei": {
       "symbol": "^N225",
