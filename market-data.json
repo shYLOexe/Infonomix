@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T01:55:03.292895+00:00",
+  "updatedAt": "2026-09-10T02:15:33.083962+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -64,23 +64,23 @@
     },
     "nikkei": {
       "symbol": "^N225",
-      "price": 64335.11,
+      "price": 64496.35,
       "previousClose": 65142.78,
-      "changePct": -1.239845766484019,
+      "changePct": -0.9923279295111451,
       "currency": "JPY",
       "exchange": "OSA",
       "marketState": null,
-      "asOf": 1789004400
+      "asOf": 1789005630
     },
     "usdinr": {
       "symbol": "USDINR=X",
-      "price": 95.095,
+      "price": 95.09,
       "previousClose": 95.13,
-      "changePct": -0.0367917586460597,
+      "changePct": -0.042047724166921104,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1789002193
+      "asOf": 1789006406
     },
     "eurinr": {
       "symbol": "EURINR=X",
