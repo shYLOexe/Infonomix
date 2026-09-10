@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T14:17:27.786691+00:00",
+  "updatedAt": "2026-09-10T14:44:30.143415+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -24,43 +24,43 @@
     },
     "sp500": {
       "symbol": "^GSPC",
-      "price": 7587.88,
+      "price": 7600.01,
       "previousClose": 7636.36,
-      "changePct": -0.6348574451702063,
+      "changePct": -0.4760121314343412,
       "currency": "USD",
       "exchange": "SNP",
       "marketState": null,
-      "asOf": 1789049846
+      "asOf": 1789051469
     },
     "nasdaq": {
       "symbol": "^IXIC",
-      "price": 26038.809,
+      "price": 26131.848,
       "previousClose": 26253.34,
-      "changePct": -0.8171569788834451,
+      "changePct": -0.4627677849751627,
       "currency": "USD",
       "exchange": "NIM",
       "marketState": null,
-      "asOf": 1789049844
+      "asOf": 1789051465
     },
     "dow": {
       "symbol": "^DJI",
-      "price": 52114.89,
+      "price": 52121.26,
       "previousClose": 52380.66,
-      "changePct": -0.5073819230227418,
+      "changePct": -0.4952209460514652,
       "currency": "USD",
       "exchange": "DJI",
       "marketState": null,
-      "asOf": 1789049847
+      "asOf": 1789051469
     },
     "ftse": {
       "symbol": "^FTSE",
-      "price": 10613.74,
+      "price": 10624.01,
       "previousClose": 10811.7,
-      "changePct": -1.8309794019441987,
+      "changePct": -1.7359897148459584,
       "currency": "GBP",
       "exchange": "FGI",
       "marketState": null,
-      "asOf": 1789048947
+      "asOf": 1789050569
     },
     "nikkei": {
       "symbol": "^N225",
@@ -84,7 +84,13 @@
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "error": "The read operation timed out"
+      "price": 110.7981,
+      "previousClose": 110.6983,
+      "changePct": 0.09015495269575223,
+      "currency": "INR",
+      "exchange": "CCY",
+      "marketState": null,
+      "asOf": 1789047149
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
@@ -98,7 +104,13 @@
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
-      "error": "<urlopen error _ssl.c:983: The handshake operation timed out>"
+      "price": 0.6189,
+      "previousClose": 0.6197,
+      "changePct": -0.1290947232531907,
+      "currency": "INR",
+      "exchange": "CCY",
+      "marketState": null,
+      "asOf": 1789047149
     }
   }
 }
