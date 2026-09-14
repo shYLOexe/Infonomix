@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T00:22:36.513547+00:00",
+  "updatedAt": "2026-09-14T05:20:10.779027+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -15,8 +15,8 @@
     "sensex": {
       "symbol": "^BSESN",
       "price": 74781.76,
-      "previousClose": 74902.6,
-      "changePct": -0.16132951326123668,
+      "previousClose": 74902.59,
+      "changePct": -0.16131618412661267,
       "currency": "INR",
       "exchange": "BSE",
       "marketState": null,
@@ -64,13 +64,13 @@
     },
     "nikkei": {
       "symbol": "^N225",
-      "price": 63309.17,
+      "price": 63412.09,
       "previousClose": 64011.34,
-      "changePct": -1.096946259834583,
+      "changePct": -0.9361622487515493,
       "currency": "JPY",
       "exchange": "OSA",
       "marketState": null,
-      "asOf": 1789344455
+      "asOf": 1789362310
     },
     "usdinr": {
       "symbol": "USDINR=X",
@@ -80,37 +80,37 @@
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1789322169
+      "asOf": 1789357552
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "price": 110.7998,
+      "price": 110.5536,
       "previousClose": 110.8417,
-      "changePct": -0.03780165767937362,
+      "changePct": -0.25992022857823366,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1789270218
+      "asOf": 1789359237
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
-      "price": 129.1836,
+      "price": 129.0253,
       "previousClose": 129.2184,
-      "changePct": -0.026931149124265544,
+      "changePct": -0.14943692229590783,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1789270218
+      "asOf": 1789359237
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
-      "price": 0.6215,
+      "price": 0.6202,
       "previousClose": 0.6215,
-      "changePct": 0.0,
+      "changePct": -0.20917135961385017,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1789150740
+      "asOf": 1789359237
     }
   }
 }
