@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T21:19:37.672909+00:00",
+  "updatedAt": "2026-10-10T01:08:46.310243+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -30,7 +30,7 @@
       "currency": "USD",
       "exchange": "SNP",
       "marketState": null,
-      "asOf": 1791578260
+      "asOf": 1791581396
     },
     "nasdaq": {
       "symbol": "^IXIC",
