@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T21:58:37.242178+00:00",
+  "updatedAt": "2026-10-14T01:07:36.668367+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -25,8 +25,8 @@
     "sp500": {
       "symbol": "^GSPC",
       "price": 7805.45,
-      "previousClose": 7807.24,
-      "changePct": -0.02292743658450315,
+      "previousClose": 7811.54,
+      "changePct": -0.07796157991894231,
       "currency": "USD",
       "exchange": "SNP",
       "marketState": null,
@@ -45,8 +45,8 @@
     "dow": {
       "symbol": "^DJI",
       "price": 51670.1,
-      "previousClose": 51850.55,
-      "changePct": -0.3480194520598226,
+      "previousClose": 51654.9,
+      "changePct": 0.02942605638573899,
       "currency": "USD",
       "exchange": "DJI",
       "marketState": null,
@@ -64,19 +64,19 @@
     },
     "nikkei": {
       "symbol": "^N225",
-      "price": 67777.52,
-      "previousClose": 69030.92,
-      "changePct": -1.8157080913886041,
+      "price": 68048.81,
+      "previousClose": 67777.52,
+      "changePct": 0.4002654567473014,
       "currency": "JPY",
       "exchange": "OSA",
       "marketState": null,
-      "asOf": 1791873903
+      "asOf": 1791939155
     },
     "usdinr": {
       "symbol": "USDINR=X",
       "price": 95.28,
-      "previousClose": 95.76,
-      "changePct": -0.5012531328320844,
+      "previousClose": 95.28,
+      "changePct": 0.0,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
@@ -85,8 +85,8 @@
     "eurinr": {
       "symbol": "EURINR=X",
       "price": 106.7099,
-      "previousClose": 106.8402,
-      "changePct": -0.1219578398393032,
+      "previousClose": 106.7099,
+      "changePct": 0.0,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
@@ -95,8 +95,8 @@
     "gbpinr": {
       "symbol": "GBPINR=X",
       "price": 126.2474,
-      "previousClose": 126.4523,
-      "changePct": -0.16203738484787938,
+      "previousClose": 126.2474,
+      "changePct": 0.0,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
@@ -105,8 +105,8 @@
     "jpyinr": {
       "symbol": "JPYINR=X",
       "price": 0.6015,
-      "previousClose": 0.6037,
-      "changePct": -0.3644194136160311,
+      "previousClose": 0.6015,
+      "changePct": 0.0,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
