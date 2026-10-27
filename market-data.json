@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T21:30:44.719344+00:00",
+  "updatedAt": "2026-10-27T00:51:55.096134+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -64,53 +64,53 @@
     },
     "nikkei": {
       "symbol": "^N225",
-      "price": 62189.65,
-      "previousClose": 62693.16,
-      "changePct": -0.8031338665972524,
+      "price": 63276.18,
+      "previousClose": 62189.65,
+      "changePct": 1.7471235165336978,
       "currency": "JPY",
       "exchange": "OSA",
       "marketState": null,
-      "asOf": 1792997103
+      "asOf": 1793061410
     },
     "usdinr": {
       "symbol": "USDINR=X",
       "price": 95.175,
-      "previousClose": 94.93,
-      "changePct": 0.25808490466658623,
+      "previousClose": 95.175,
+      "changePct": 0.0,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1793038239
+      "asOf": 1793061480
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "price": 106.4938,
-      "previousClose": 106.2876,
-      "changePct": 0.19400193437427837,
+      "price": 106.3548,
+      "previousClose": 106.4938,
+      "changePct": -0.13052403050693637,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1793039803
+      "asOf": 1793062305
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
-      "price": 127.0668,
-      "previousClose": 126.9295,
-      "changePct": 0.10817028350383182,
+      "price": 126.982,
+      "previousClose": 127.0668,
+      "changePct": -0.06673655116836288,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1793039803
+      "asOf": 1793062305
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
-      "price": 0.6046,
-      "previousClose": 0.605,
-      "changePct": -0.06611570247933156,
+      "price": 0.6037,
+      "previousClose": 0.6046,
+      "changePct": -0.14885874958650544,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1793039803
+      "asOf": 1793062305
     }
   }
 }
