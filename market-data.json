@@ -1,116 +1,116 @@
 {
-  "updatedAt": "2026-11-16T05:49:04.524261+00:00",
+  "updatedAt": "2026-11-16T15:22:29.262087+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
       "symbol": "^NSEI",
-      "price": 25232.55,
+      "price": 25291.1,
       "previousClose": 25144.3,
-      "changePct": 0.350974177050067,
+      "changePct": 0.5838301324753494,
       "currency": "INR",
       "exchange": "NSI",
       "marketState": null,
-      "asOf": 1794808143
+      "asOf": 1794823271
     },
     "sensex": {
       "symbol": "^BSESN",
-      "price": 81977.7,
+      "price": 82104.79,
       "previousClose": 81592.45,
-      "changePct": 0.472163784761948,
+      "changePct": 0.6279257455806223,
       "currency": "INR",
       "exchange": "BSE",
       "marketState": null,
-      "asOf": 1794807243
+      "asOf": 1794823349
     },
     "sp500": {
       "symbol": "^GSPC",
-      "price": 7561.67,
-      "previousClose": 7592.4,
-      "changePct": -0.4047468521152674,
+      "price": 7461.52,
+      "previousClose": 7561.67,
+      "changePct": -1.3244428810037945,
       "currency": "USD",
       "exchange": "SNP",
       "marketState": null,
-      "asOf": 1794606199
+      "asOf": 1794842548
     },
     "nasdaq": {
       "symbol": "^IXIC",
-      "price": 25136.273,
-      "previousClose": 25366.1,
-      "changePct": -0.9060399509581587,
+      "price": 24625.676,
+      "previousClose": 25136.273,
+      "changePct": -2.0313154619223046,
       "currency": "USD",
       "exchange": "NIM",
       "marketState": null,
-      "asOf": 1794608159
+      "asOf": 1794842547
     },
     "dow": {
       "symbol": "^DJI",
-      "price": 52347.55,
-      "previousClose": 52297.1,
-      "changePct": 0.0964680641947725,
+      "price": 51997.64,
+      "previousClose": 52347.55,
+      "changePct": -0.6684362496430176,
       "currency": "USD",
       "exchange": "DJI",
       "marketState": null,
-      "asOf": 1794606206
+      "asOf": 1794842548
     },
     "ftse": {
       "symbol": "^FTSE",
-      "price": 10902.56,
-      "previousClose": 10863.1,
-      "changePct": 0.36324805994604786,
+      "price": 10931.7,
+      "previousClose": 10902.56,
+      "changePct": 0.2672766763035584,
       "currency": "GBP",
       "exchange": "FGI",
       "marketState": null,
-      "asOf": 1794587729
+      "asOf": 1794841648
     },
     "nikkei": {
       "symbol": "^N225",
-      "price": 59829.77,
+      "price": 59662.02,
       "previousClose": 61142.35,
-      "changePct": -2.1467607967309106,
+      "changePct": -2.4211205490139025,
       "currency": "JPY",
       "exchange": "OSA",
       "marketState": null,
-      "asOf": 1794807240
+      "asOf": 1794811503
     },
     "usdinr": {
       "symbol": "USDINR=X",
-      "price": 94.115,
+      "price": 93.912,
       "previousClose": 94.23,
-      "changePct": -0.12204181258623484,
+      "changePct": -0.33747214262973346,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1794808138
+      "asOf": 1794840221
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "price": 103.7241,
+      "price": 103.4324,
       "previousClose": 103.8913,
-      "changePct": -0.16093744134493843,
+      "changePct": -0.44171167364351,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1794808139
+      "asOf": 1794841904
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
-      "price": 124.3259,
+      "price": 123.8752,
       "previousClose": 124.4769,
-      "changePct": -0.12130764824637844,
+      "changePct": -0.4833828605950131,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1794808139
+      "asOf": 1794841904
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
-      "price": 0.5901,
+      "price": 0.5886,
       "previousClose": 0.59,
-      "changePct": 0.016949152542371015,
+      "changePct": -0.23728813559321305,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1794808007
+      "asOf": 1794841904
     }
   }
 }
