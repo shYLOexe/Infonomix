@@ -1,66 +1,66 @@
 {
-  "updatedAt": "2026-11-18T06:50:58.310155+00:00",
+  "updatedAt": "2026-11-18T16:18:30.702355+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
       "symbol": "^NSEI",
-      "price": 25236.95,
-      "previousClose": 25387.4,
-      "changePct": -0.592616809913582,
+      "price": 25227.95,
+      "previousClose": 25291.1,
+      "changePct": -0.24969257960309288,
       "currency": "INR",
       "exchange": "NSI",
       "marketState": null,
-      "asOf": 1794984657
+      "asOf": 1794996069
     },
     "sensex": {
       "symbol": "^BSESN",
-      "price": 82087.92,
-      "previousClose": 82532.19,
-      "changePct": -0.5382990564045423,
+      "price": 82031.81,
+      "previousClose": 82104.8,
+      "changePct": -0.08889857840224352,
       "currency": "INR",
       "exchange": "BSE",
       "marketState": null,
-      "asOf": 1794983756
+      "asOf": 1794996156
     },
     "sp500": {
       "symbol": "^GSPC",
-      "price": 7340.53,
-      "previousClose": 7416.59,
-      "changePct": -1.0255386909617545,
+      "price": 7297.43,
+      "previousClose": 7340.53,
+      "changePct": -0.58715106402398,
       "currency": "USD",
       "exchange": "SNP",
       "marketState": null,
-      "asOf": 1794951732
+      "asOf": 1795018710
     },
     "nasdaq": {
       "symbol": "^IXIC",
-      "price": 24328.383,
-      "previousClose": 24509.758,
-      "changePct": -0.7400113864853336,
+      "price": 24283.219,
+      "previousClose": 24328.383,
+      "changePct": -0.18564324640893998,
       "currency": "USD",
       "exchange": "NIM",
       "marketState": null,
-      "asOf": 1794953759
+      "asOf": 1795018708
     },
     "dow": {
       "symbol": "^DJI",
-      "price": 50759.42,
-      "previousClose": 51608.2,
-      "changePct": -1.6446611197445344,
+      "price": 50088.3,
+      "previousClose": 50759.42,
+      "changePct": -1.322158527422093,
       "currency": "USD",
       "exchange": "DJI",
       "marketState": null,
-      "asOf": 1794951738
+      "asOf": 1795018710
     },
     "ftse": {
       "symbol": "^FTSE",
-      "price": 10689.87,
-      "previousClose": 10881.6,
-      "changePct": -1.7619651521834985,
+      "price": 10559.26,
+      "previousClose": 10689.87,
+      "changePct": -1.2218109294126174,
       "currency": "GBP",
       "exchange": "FGI",
       "marketState": null,
-      "asOf": 1794933329
+      "asOf": 1795017809
     },
     "nikkei": {
       "symbol": "^N225",
@@ -70,47 +70,47 @@
       "currency": "JPY",
       "exchange": "OSA",
       "marketState": null,
-      "asOf": 1794983401
+      "asOf": 1794984303
     },
     "usdinr": {
       "symbol": "USDINR=X",
-      "price": 93.335,
+      "price": 93.43,
       "previousClose": 93.47,
-      "changePct": -0.14443136835348785,
+      "changePct": -0.042794479512134415,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1794984650
+      "asOf": 1795009619
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "price": 102.4818,
+      "price": 102.5044,
       "previousClose": 102.8689,
-      "changePct": -0.37630420856059466,
+      "changePct": -0.35433449759839225,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1794984650
+      "asOf": 1795011403
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
-      "price": 123.1089,
+      "price": 122.9573,
       "previousClose": 123.4333,
-      "changePct": -0.26281400562084717,
+      "changePct": -0.3856333744621582,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1794984651
+      "asOf": 1795011403
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
-      "price": 0.5857,
+      "price": 0.5862,
       "previousClose": 0.5864,
-      "changePct": -0.11937244201910538,
+      "changePct": -0.03410641200545327,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1794984403
+      "asOf": 1795011403
     }
   }
 }
