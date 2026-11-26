@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T10:43:27.385783+00:00",
+  "updatedAt": "2026-11-26T19:51:07.307281+00:00",
   "source": "Yahoo Finance chart feed",
   "instruments": {
     "nifty": {
@@ -54,13 +54,13 @@
     },
     "ftse": {
       "symbol": "^FTSE",
-      "price": 10585.72,
+      "price": 10609.3,
       "previousClose": 10426.94,
-      "changePct": 1.5227861673702814,
+      "changePct": 1.7489311341582356,
       "currency": "GBP",
       "exchange": "FGI",
       "marketState": null,
-      "asOf": 1795688907
+      "asOf": 1795710929
     },
     "nikkei": {
       "symbol": "^N225",
@@ -74,43 +74,43 @@
     },
     "usdinr": {
       "symbol": "USDINR=X",
-      "price": 92.54,
+      "price": 92.435,
       "previousClose": 92.22,
-      "changePct": 0.3469963131641806,
+      "changePct": 0.23313814790718218,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1795689371
+      "asOf": 1795722086
     },
     "eurinr": {
       "symbol": "EURINR=X",
-      "price": 101.5618,
+      "price": 101.4311,
       "previousClose": 101.2579,
-      "changePct": 0.300124731008641,
+      "changePct": 0.17104838239781214,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1795689708
+      "asOf": 1795722404
     },
     "gbpinr": {
       "symbol": "GBPINR=X",
-      "price": 121.2867,
+      "price": 121.1327,
       "previousClose": 120.9316,
-      "changePct": 0.2936370642578061,
+      "changePct": 0.16629235038649678,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1795689708
+      "asOf": 1795722404
     },
     "jpyinr": {
       "symbol": "JPYINR=X",
-      "price": 0.5807,
+      "price": 0.5803,
       "previousClose": 0.5794,
-      "changePct": 0.22437003797030858,
+      "changePct": 0.1553331032102195,
       "currency": "INR",
       "exchange": "CCY",
       "marketState": null,
-      "asOf": 1795689708
+      "asOf": 1795722404
     }
   }
 }
